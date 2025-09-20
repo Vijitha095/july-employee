@@ -25,5 +25,8 @@ urlpatterns = [
     path('reg',views.RegisterView.as_view(),name="register_view"),
     path('delete/<int:id>',views.DeleteView.as_view(),name="delete_view"),
     path('update/<int:id>',views.UpdateView.as_view(),name="update_view"),
-    path('emp/reg',app2_views.EmployeeRegisterView.as_view(),name="emp_reg")
+    path('emp/reg',app2_views.EmployeeRegisterView.as_view(),name="emp_reg"),
+    path('emp/update/<int:empid>',app2_views.EmployeeUpdateView.as_view(),name="emp_update"),
+    path('model/reg',app2_views.ModelRegisterView.as_view(),name="model_reg"),
+    path('model/update/<int:empid>',app2_views.ModelUpdateView.as_view(),name="model_update"),
 ]

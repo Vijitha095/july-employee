@@ -3,3 +3,6 @@ salary
 designation
 email
 phone
+
+
+pip install -r requirements.txt

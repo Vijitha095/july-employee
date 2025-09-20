@@ -44,6 +44,8 @@
                 <td>{{emp.phone}}</td>
                 <td>
                   <a href="{% url 'update_view' emp.id %}" class="btn btn-info">update</a>
+                  <a href="{% url 'emp_update' emp.id %}" class="btn btn-info">empupdate</a>
+                  <a href="{% url 'model_update' emp.id %}" class="btn btn-info">modelupdate</a>
                   <a href="{% url 'delete_view' emp.id %}" class="btn btn-info">Delete</a>
                 </td>
             </tr>
